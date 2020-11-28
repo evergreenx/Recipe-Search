@@ -25,6 +25,9 @@ function App() {
   
       setRecipes(data.hits);
     };
+
+
+    getRecipes
   
   }, [query]);
 
