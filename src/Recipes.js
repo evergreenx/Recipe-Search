@@ -9,21 +9,22 @@ function Recipes({ title, calo, image, ingredients }) {
         </a>
 
         <header className="p-2 md:p-4">
-          <h1 className="text-lg">
+          <h1>
             <a className="no-underline hover:underline text-black" href="#">
               {title}
             </a>
           </h1>
-        <p>Calories : {calo}</p>
-
+          <p>Calories : {calo}</p>
         </header>
 
-        {ingredients.map((ingredient) => (
-            <ul className="p-2">
-            <li>{ingredient.text}</li>
-
+        <div className="ingredient  p-4">
+          <p>Ingredient</p>
+          {ingredients.map((ingredient) => (
+            <ul>
+              <li>{ingredient.text}</li>
             </ul>
-        ))}
+          ))}
+        </div>
 
         {}
       </article>

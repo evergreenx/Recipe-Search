@@ -78,7 +78,16 @@ function App() {
         ))}
       </div>
 
-      <img src="../api.jpeg" alt="edamam" />
+      <hr class="border-b m-0" />
+      <footer class="p-4 text-center">
+        <img src="../api.jpeg" alt="edamam" />
+        <h2 className="">Created by Ido Evergreen</h2>
+        <div className="icon__pack">
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-github"></i>
+        </div>
+      
+      </footer>
     </div>
   );
 }
