@@ -27,7 +27,7 @@ function App() {
     };
 
 
-    getRecipes
+    getRecipes()
   
   }, [query]);
 
