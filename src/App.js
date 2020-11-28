@@ -43,11 +43,11 @@ function App() {
         <div className="font-sans text-black mb-3 flex items-center justify-center">
           <div className="border rounded overflow-hidden flex">
             <input
-              type="text"
+              type="search"
               value={search}
               onChange={updateSearch}
               className="px-4 py-2"
-              placeholder="Search..."
+              placeholder="Search Food Recipe"
             />
             <button
               className="flex items-center justify-center px-4 border-l"
@@ -79,14 +79,21 @@ function App() {
       </div>
 
       <hr class="border-b m-0" />
-      <footer class="p-4 text-center">
+      <footer class="p-2 text-center">
+
+    
         <img src="../api.jpeg" alt="edamam" />
         <h2 className="">Created by Ido Evergreen</h2>
         <div className="icon__pack">
-        <i class="fa fa-twitter"></i>
-        <i class="fa fa-github"></i>
+          <a href="https://github.com/evergreen2001">
+            <i class="fa fa-github"></i>
+          </a>
+
+          <a href="https://twitter.com/idoevergreen">
+            <i class="fa fa-twitter"></i>
+          </a>
+         
         </div>
-      
       </footer>
     </div>
   );

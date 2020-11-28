@@ -20,9 +20,9 @@ function Recipes({ title, calo, image, ingredients }) {
         <div className="ingredient  p-4">
           <p>Ingredient</p>
           {ingredients.map((ingredient) => (
-            <ul>
+            <ol>
               <li>{ingredient.text}</li>
-            </ul>
+            </ol>
           ))}
         </div>
 

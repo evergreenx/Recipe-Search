@@ -22,11 +22,15 @@ h2 {
 
 .icon__pack {
   font-size: 50px;
-  margin:10px;
+  margin:20px;
 }
 
 
-.icon__pack > .fa{
-  margin:10px;
+.icon__pack > a> .fa{
+  margin:20px;
+  color:green;
 
 }
+
+
+
