@@ -14,19 +14,21 @@ function App() {
   // const EndPoint = ``;
 
   useEffect(() => {
-    getRecipes();
+
+    const getRecipes = async () => {
+      const res = await fetch(
+        `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${API_KEY}`
+      );
+      const data = await res.json();
+  
+      console.log(data.hits);
+  
+      setRecipes(data.hits);
+    };
+  
   }, [query]);
 
-  const getRecipes = async () => {
-    const res = await fetch(
-      `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${API_KEY}`
-    );
-    const data = await res.json();
-
-    console.log(data.hits);
-
-    setRecipes(data.hits);
-  };
+  
 
   const updateSearch = (e) => {
     setSearch(e.target.value);
