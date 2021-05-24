@@ -90,7 +90,7 @@ function App() {
         <img src="../api.jpeg" alt="edamam" />
         <h2 className="">Created by Ido Evergreen</h2>
         <div className="icon__pack">
-          <a href="https://github.com/evergreen2001">
+          <a href="https://github.com/evergreenx">
             <i class="fa fa-github"></i>
           </a>
 
