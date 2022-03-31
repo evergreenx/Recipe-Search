@@ -12,19 +12,24 @@ function App() {
   const [query, setQuery] = useState("chicken");
 
   useEffect(() => {
+
     const getRecipes = async () => {
       const res = await fetch(
         `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${API_KEY}`
       );
       const data = await res.json();
-
+  
       console.log(data.hits);
-
+  
       setRecipes(data.hits);
     };
 
-    getRecipes();
+
+    getRecipes()
+  
   }, [query]);
+
+  
 
   const updateSearch = (e) => {
     setSearch(e.target.value);
@@ -78,6 +83,8 @@ function App() {
 
       <hr class="border-b m-0" />
       <footer class="p-2 text-center">
+
+    
         <img src="../api.jpeg" alt="edamam" />
         <h2 className="">Created by Ido Evergreen</h2>
         <div className="icon__pack">
@@ -88,6 +95,7 @@ function App() {
           <a href="https://twitter.com/idoevergreen">
             <i class="fa fa-twitter"></i>
           </a>
+         
         </div>
       </footer>
     </div>
