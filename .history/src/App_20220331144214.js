@@ -4,7 +4,7 @@ import "./App.css";
 import Recipes from "../src/Recipes";
 
 function App() {
-  const APP_ID = process.env.REACT_APP_API_ID;
+  const APP_ID = process.env.REACT_APP_APP_ID;
   const API_KEY = process.env.REACT_APP_API_KEY;
 
   const [recipes, setRecipes] = useState([]);
